@@ -18,7 +18,7 @@ resource "aws_subnet" "subnet-emissor" {
   vpc_id                  = aws_vpc.vpc-emissor.id
   cidr_block              = "172.25.0.0/24"
   map_public_ip_on_launch = "true"
-  availability_zone       = var.AWS_REGION_AZ_WEB_1
+  availability_zone       = var.AWS_REGION_AZ_emissor
 
   tags = {
     Name = "subnet-emissor"
